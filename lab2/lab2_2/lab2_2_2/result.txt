@@ -1,0 +1,1 @@
+[{"name": "Jasur", "age": 20}, {"name": "Rustam", "age": 45}, {"name": "Nargiza", "age": 41}, {"name": "Kamilla", "age": 16}, {"name": "Samira", "age": 7}]
