@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Страница Ввода</title>
+</head>
+
+<body>
+    <form method="GET" action="/input/warehouse">
+        <p>Введите имя склада</p>
+        <input name="warehouse" spellcheck="false" autocomplete="off">
+        <br>
+        <input type="button" onclick="addRow()" value="Добавить машину"></button>
+        <br>
+        <br>
+        <table id="table">
+        </table>
+        <input type="submit" value="Добавить">
+    </form>
+    <script language="javascript">
+        function addRow() {
+            // Получить ссылку на таблицу
+            let table = document.getElementById("table")
+            // Кол-во строк в таблице
+            let rowCount = table.rows.length
+            //  Вставить строку в таблицу с индексом строки rowCount (в последнее место)
+            let row = table.insertRow(rowCount)
+            // Вставить ячейку в графу с индексом 0
+            let cell = row.insertCell(0);
+            // содаём элемент input с типом = ... , именем ...
+            let modelInput = document.createElement("input")
+            modelInput.type = "text"
+            modelInput.name = "field"
+            modelInput.placeholder = "model"
+            cell.appendChild(modelInput)
+        }
+    </script>
+    <a href="/login">Exit</a>
+</body>
+
+</html>

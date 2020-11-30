@@ -103,7 +103,7 @@ function getChildByFirstLetter(arr){
 
 create(arr, "Уткирова", 18);
 create(arr, "Турсунов", 7);
-create(arr, "Евсигнеев", 20);
+create(arr, "Куцелаба", 20);
 create(arr, "юля", 16);
 create(arr, "джим", 45);
 
